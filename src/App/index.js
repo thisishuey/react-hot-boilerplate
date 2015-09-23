@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import Radium, { Style } from 'radium';
+
 import style from './style';
 import rules from './rules';
 
 import Button from '../Button';
+
+require('bootstrap/less/bootstrap.less');
 
 @Radium
 export default class App extends Component {
