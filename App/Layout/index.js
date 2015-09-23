@@ -17,7 +17,7 @@ class Layout extends Component {
       <div>
         <Navbar/>
         <Container>
-          <RouteHandler/>
+          {this.props.children}
         </Container>
         <Style rules={rules}/>
       </div>

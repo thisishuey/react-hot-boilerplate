@@ -1,14 +1,14 @@
 import React from 'react';
-import { Route, DefaultRoute } from 'react-router';
+import { Route, IndexRoute } from 'react-router';
 
-import Layout from './Layout';
-import Home from './Home';
-import Login from './Login';
+import { Layout, Home, NotFound, Profile, Login } from './pages';
 
 const routes = (
-  <Route path="/" handler={Layout}>
-    <Route path="login" handler={Login}/>
-    <DefaultRoute handler={Home}/>
+  <Route path="/" component={Layout}>
+    <IndexRoute component={Home} />
+    <Route path="login" component={Login} />
+    <Route path="profile/:username" component={Profile} />
+    <Route path="*" component={NotFound} />
   </Route>
 );
 
