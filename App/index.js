@@ -18,7 +18,7 @@ class App extends Component {
     return (
       <Container>
         <ul>
-          <li><Link to="/home">Home</Link></li>
+          <li><Link to="/">Home</Link></li>
           <li><Link to="/login">Login</Link></li>
         </ul>
         <RouteHandler/>
@@ -30,8 +30,8 @@ class App extends Component {
 
 const routes = (
   <Route path="/" handler={App}>
-    <Route path="home" handler={Home}/>
     <Route path="login" handler={Login}/>
+    <DefaultRoute handler={Home}/>
   </Route>
 );
 
