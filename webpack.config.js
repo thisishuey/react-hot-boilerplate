@@ -7,7 +7,7 @@ var webpackConfig = {
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
-    './src/index'
+    './App'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -19,7 +19,7 @@ var webpackConfig = {
   ],
   module: {
     loaders: [
-      { test: /\.js$/, loaders: ['react-hot', 'babel'], include: path.join(__dirname, 'src')},
+      { test: /\.js$/, loaders: ['react-hot', 'babel'], include: path.join(__dirname, 'App')},
       { test: /\.less$/, loaders: ['style', 'css', 'postcss', 'less'] },
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url?limit=10000&minetype=application/font-woff' },
       { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'file' }
