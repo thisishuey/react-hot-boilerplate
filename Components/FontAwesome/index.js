@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import Radium from 'radium';
 
 @Radium
-class Icon extends Component {
+class FontAwesome extends Component {
   render() {
     const {
-      iconClass = '',
+      icon = '',
       type = 'fontAwesome',
-      className = (type === 'glyphicon' ? 'glyphicon glyphicon-' : 'fa fa-' ) + iconClass
+      className = (type === 'glyphicon' ? 'glyphicon glyphicon-' : 'fa fa-' ) + icon
     } = this.props;
     return (
       <span className={className}/>
@@ -15,4 +15,4 @@ class Icon extends Component {
   }
 }
 
-export default Icon;
+export default FontAwesome;

@@ -8,21 +8,23 @@ import { Container } from '../../Components';
 class Navbar extends Component {
   render() {
     return (
-      <nav className="navbar navbar-inverse navbar-fixed-top">
+      <nav className="navbar navbar-dark navbar-fixed-top bg-inverse">
         <Container>
-          <div className="navbar-header">
-            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span className="sr-only">Toggle navigation</span>
-              <span className="icon-bar"/>
-              <span className="icon-bar"/>
-              <span className="icon-bar"/>
-            </button>
+          <button className="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+            &#9776;
+          </button>
+          <div className="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
             <Link className="navbar-brand" to="/">React Sandbox</Link>
-          </div>
-          <div id="navbar" className="collapse navbar-collapse">
             <ul className="nav navbar-nav">
-              <li className="active"><Link to="/">Home</Link></li>
-              <li><Link to="/login">Login</Link></li>
+              <li className="nav-item active">
+                <Link className="nav-link" to="/">Home<span className="sr-only"> (current)</span></Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/login">Login</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/profile">Profile</Link>
+              </li>
             </ul>
           </div>
         </Container>

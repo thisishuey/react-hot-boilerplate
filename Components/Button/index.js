@@ -6,7 +6,7 @@ class Button extends Component {
   render() {
     const {
       type = 'button',
-      buttonClass = 'default',
+      buttonClass = 'primary',
       className = 'btn btn-' + buttonClass,
       children
     } = this.props;

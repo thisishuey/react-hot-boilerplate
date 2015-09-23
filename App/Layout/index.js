@@ -7,8 +7,8 @@ import { Container, Navbar } from '../../Components';
 import style from './style';
 import rules from './rules';
 
-require('bootstrap/less/bootstrap.less');
-require('font-awesome/less/font-awesome.less');
+require('bootstrap/scss/bootstrap.scss');
+require('font-awesome/scss/font-awesome.scss');
 
 @Radium
 class Layout extends Component {

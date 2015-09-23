@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Radium from 'radium';
 
-import { Button, Icon, PageHeader } from '../../Components';
+import { Button, FontAwesome, PageHeader } from '../../Components';
 
 @Radium
 class Home extends Component {
@@ -10,10 +10,7 @@ class Home extends Component {
       <div>
         <PageHeader>Hello, Huey!</PageHeader>
         <Button>
-          Font Awesome Button! <Icon/>
-        </Button>
-        <Button>
-          Glyphicon Button! <Icon type="glyphicon"/>
+          Font Awesome Button! <FontAwesome icon="thumbs-up"/>
         </Button>
       </div>
     );
