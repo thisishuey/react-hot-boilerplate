@@ -1,5 +1,5 @@
 export Button from './Button';
 export Container from './Container';
 export FontAwesome from './FontAwesome';
-export NavBar from './NavBar';
+export Navbar from './Navbar';
 export PageHeader from './PageHeader';

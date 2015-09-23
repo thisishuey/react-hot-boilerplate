@@ -8,6 +8,6 @@ class PageHeader extends Component {
       <h1 className="page-header">{this.props.children}</h1>
     );
   }
-};
+}
 
 export default PageHeader;

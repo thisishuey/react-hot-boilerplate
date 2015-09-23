@@ -4,11 +4,16 @@ import Radium from 'radium';
 @Radium
 class Button extends Component {
   render() {
-    const className = 'btn ' + (this.props.type ? ('btn-' + this.props.type) : 'btn-default');
+    const {
+      type = 'button',
+      buttonClass = 'default',
+      className = 'btn btn-' + buttonClass,
+      children
+    } = this.props;
     return (
-      <button className={className}>{this.props.children}</button>
+      <button type={type} className={className}>{children}</button>
     );
   }
-};
+}
 
 export default Button;

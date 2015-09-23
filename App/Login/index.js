@@ -7,11 +7,9 @@ import { PageHeader } from '../../Components';
 class Login extends Component {
   render() {
     return (
-      <div>
-        <PageHeader>Login</PageHeader>
-      </div>
+      <PageHeader>Login</PageHeader>
     );
   }
-};
+}
 
 export default Login;

@@ -8,6 +8,6 @@ class Container extends Component {
       <div className="container">{this.props.children}</div>
     );
   }
-};
+}
 
 export default Container;
