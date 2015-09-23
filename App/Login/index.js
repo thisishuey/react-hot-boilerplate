@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Radium from 'radium';
 
-import PageHeader from '../PageHeader';
+import { PageHeader } from '../../Components';
 
 @Radium
 class Login extends Component {

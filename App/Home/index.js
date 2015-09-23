@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import Radium from 'radium';
 
-import PageHeader from '../PageHeader';
-import Button from '../Button';
-import FontAwesome from '../FontAwesome';
+import { Button, FontAwesome, PageHeader } from '../../Components';
 
 @Radium
 class Home extends Component {
