@@ -4,7 +4,7 @@ import Radium from 'radium';
 import { PageHeader } from '../../Components';
 
 @Radium
-class NotFound extends Component {
+class NoMatch extends Component {
   render() {
     return (
       <PageHeader>404 NOT FOUND</PageHeader>
@@ -12,4 +12,4 @@ class NotFound extends Component {
   }
 }
 
-export default NotFound;
+export default NoMatch;
