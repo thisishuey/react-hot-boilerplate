@@ -7,9 +7,8 @@ const routes = (
   <Route path="/" component={Layout}>
     <IndexRoute component={Home}/>
     <Route path="login" component={Login}/>
-    <Route path="profiles" component={Profiles}>
-      <Route path="/profile/:username" component={Profile}/>
-    </Route>
+    <Route path="profiles" component={Profiles}/>
+    <Route path="/profile/:username" component={Profile}/>
     <Route path="*" component={NoMatch}/>
   </Route>
 );
