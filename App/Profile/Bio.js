@@ -17,4 +17,9 @@ class Bio extends Component {
 
 }
 
+Bio.propTypes = {
+  bio: React.PropTypes.object.isRequired,
+  username: React.PropTypes.string.isRequired
+};
+
 export default Bio;

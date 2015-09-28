@@ -11,7 +11,7 @@ class Profile extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      bio: [ 'Huey' ],
+      bio: { name: 'Huey' },
       repos: [ 1, 2, 3 ],
       notes: [ 'note1', 'note2' ]
     };
